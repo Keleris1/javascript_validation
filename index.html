@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>JavaScript Validation</title>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="title">
+            <h2>Register now</h2>
+        </div>
+        <form method="POST" action="index.php" onsubmit="return Validate()" name="vform">
+            <div id="username_div">
+
+                <i class="fa fa-user icon"></i>
+                <input type="text" name="username" placeholder="Username" class="textInput" />
+                <div id="name_error"></div>
+            </div>
+            <div id="email_div">
+
+                <i class="fa fa-envelope"></i>
+                <input type="text" name="email " placeholder="Email" class="textInput ">
+                <div id="email_error"></div>
+            </div>
+            <div id="password_div">
+
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="Password" name="password" class="textInput">
+                <div id="password_error"></div>
+            </div>
+            <div id="confirm_div">
+
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" placeholder="Confirm password" name="confirm" class="textInput">
+                <div id="confirm_error"></div>
+            </div>
+            <div>
+                <input type="submit" name="register" value="Register" class="btn">
+            </div>
+            <div id="buttonContainer">
+                <div id="facebook">
+                    <i class="fa fa-facebook-square"></i>
+                    <button class="btn facebook">Login with Facebook</button>
+                </div>
+                <div id="space"></div>
+                <div id="twitter">
+                    <i class="fa fa-twitter-square"></i>
+                    <button class="btn twitter">Login with Twitter</button>
+                </div>
+            </div>
+            <footer>
+                <span>Do you have account?</span><input type="submit" name="signUp" value="Sign Up" class="btn sign">
+            </footer>
+        </form>
+    </div>
+    <script src="script.js "></script>
+
+</body>
+
+
+</html>
